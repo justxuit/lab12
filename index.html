@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html ng-app="todoModule">
+<head>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
+
+  <script src="lib/jquery-1.11.1.js"></script>
+  <script src="angular.min.js"></script>
+  <script src="modulez.js"></script>
+  <link rel="stylesheet" href="reset.css">
+  <link type="text/css" rel="stylesheet" href="stylez.css"/>
+  <title>Todas.</title>
+</head>
+
+<body ng-controller="todoController">
+
+  <div id="filter-wrap">
+    <center>
+      <input type="text" placeholder="search filter" ng-model="choreFilter" id="search-bar"/>
+    </center>
+  </div>
+
+  <div id="list-wrap">
+    <h1>All the things.</h1>
+    <ul id="list">
+      <li ng-repeat="chore in chores | filter:choreFilter track by $index">
+      <button id="delButton" ng-click="removeChore(chore)"></button> {{chore}}</li>
+    </ul>
+  </div>
+
+  <div id="add-wrap">
+    <center>
+    <input type="text" placeholder="add to list" id="userInput" ng-model="choreToAdd"/>
+
+    <button id="addButton" ng-click="onclick(choreToAdd)">+</button>
+    </center>
+  <div>
+
+</body>
+
+</html>
