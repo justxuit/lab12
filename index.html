@@ -9,7 +9,7 @@
   <script src="modulez.js"></script>
   <link rel="stylesheet" href="reset.css">
   <link type="text/css" rel="stylesheet" href="stylez.css"/>
-  <title>Todas.</title>
+  <title>"Productivity" +1</title>
 </head>
 
 <body ng-controller="todoController">
@@ -30,9 +30,11 @@
 
   <div id="add-wrap">
     <center>
-    <input type="text" placeholder="add to list" id="userInput" ng-model="choreToAdd"/>
+    <form ng-submit="choreToAdd()">
+      <input type="text" placeholder="add to list" id="userInput" ng-model="choreToAdd"/>
 
-    <button id="addButton" ng-click="onclick(choreToAdd)">+</button>
+      <button type="submit" id="addButton" ng-click="onclick(choreToAdd)">+</button>
+    </form>
     </center>
   <div>
 

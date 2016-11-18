@@ -7,8 +7,7 @@ body {
   background-color: #ffcc00;
   position: absolute;
   top: 0px;
-  width: 99%;
-  margin: auto;
+  width: 100%;
 }
 
 input {
@@ -53,8 +52,7 @@ li {
 #add-wrap {
   position: absolute;
   bottom: 0px;
-  width: 99%;
-  margin: auto;
+  width: 100%;
 }
 
 #userInput {
@@ -82,7 +80,7 @@ li {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  box-shadow: 3px 3px 2px #888888;
+  box-shadow: 2px 2px 1px #888888;
 }
 
 #addButton:hover {
